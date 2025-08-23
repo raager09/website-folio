@@ -1,0 +1,452 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Biolinks Dark Theme Design System */
+
+@layer base {
+  :root {
+    --background: 220 15% 8%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 15% 12%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 200 100% 60%;
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 210 10% 65%;
+
+    --accent: 200 100% 60%;
+    --accent-foreground: 220 15% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 18%;
+    --ring: 200 100% 60%;
+
+    --radius: 1rem;
+
+    /* Custom biolinks variables */
+    --glass-bg: 220 15% 12% / 0.15;
+    --glass-border: 210 20% 98% / 0.05;
+    --profile-glow: 200 100% 60% / 0.3;
+    --status-online: 120 100% 50%;
+    --atmospheric-overlay: 220 30% 5% / 0.6;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Already optimized for dark theme - keep same values */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ===== MOVING GRADIENT BACKGROUNDS ===== */
+
+/* Main moving gradient background */
+.moving-gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #1a1a1a,
+    #333333,
+    #4d4d4d,
+    #666666,
+    #808080,
+    #999999,
+    #b3b3b3,
+    #cccccc,
+    #e6e6e6,
+    #ffffff,
+    #e6e6e6,
+    #cccccc,
+    #b3b3b3,
+    #999999,
+    #808080,
+    #666666,
+    #4d4d4d,
+    #333333,
+    #1a1a1a
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 20s ease infinite;
+}
+
+/* Alternative: Smoother diagonal flow */
+.moving-gradient-bg-smooth {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(
+    -45deg,
+    #000000 0%,
+    #1a1a1a 12%,
+    #333333 25%,
+    #4d4d4d 37%,
+    #666666 50%,
+    #808080 62%,
+    #999999 75%,
+    #cccccc 87%,
+    #ffffff 100%
+  );
+  background-size: 600% 600%;
+  animation: gradientWave 25s ease-in-out infinite;
+}
+
+/* Alternative: Radial pulsing effect */
+.moving-gradient-bg-radial {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(
+    ellipse at center,
+    #ffffff 0%,
+    #e6e6e6 15%,
+    #cccccc 30%,
+    #999999 45%,
+    #666666 60%,
+    #333333 75%,
+    #1a1a1a 90%,
+    #000000 100%
+  );
+  background-size: 300% 300%;
+  animation: radialPulse 18s ease-in-out infinite;
+}
+
+/* Keyframe animations for gradients */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradientWave {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 25%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 25% 0%;
+  }
+}
+
+@keyframes radialPulse {
+  0%, 100% {
+    background-position: 50% 50%;
+    background-size: 200% 200%;
+  }
+  25% {
+    background-position: 30% 70%;
+    background-size: 250% 250%;
+  }
+  50% {
+    background-position: 70% 30%;
+    background-size: 300% 300%;
+  }
+  75% {
+    background-position: 40% 60%;
+    background-size: 220% 220%;
+  }
+}
+
+/* Content overlay to ensure readability */
+.content-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+/* Blurred content sections */
+.content-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Black text override for content sections */
+.content-section,
+.content-section h1,
+.content-section h2, 
+.content-section h3,
+.content-section p,
+.content-section span,
+.content-section a {
+  color: #000000 !important;
+}
+
+/* Profile card with blur background */
+.profile-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card,
+.profile-card h1,
+.profile-card h2,
+.profile-card p,
+.profile-card span {
+  color: #000000 !important;
+}
+
+/* Contact cards with blur */
+.contact-card-blur {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.contact-card-blur:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card-blur,
+.contact-card-blur h3,
+.contact-card-blur p {
+  color: #000000 !important;
+}
+
+/* Tech tags with blur */
+.tech-tag-blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #000000 !important;
+  font-weight: 600;
+}
+
+/* ===== EXISTING PAGE TRANSITIONS ===== */
+
+.page-transition {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Fade transition */
+.page-transition.fadeOut {
+  animation-name: fadeOut;
+}
+
+.page-transition.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ===== CONTENT ANIMATIONS ===== */
+
+.animate-fade-up {
+  animation: fadeUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-fade-up-delay-1 {
+  animation: fadeUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-fade-up-delay-2 {
+  animation: fadeUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-fade-up-delay-3 {
+  animation: fadeUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-fade-up-delay-4 {
+  animation: fadeUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Scale up animation for profile cards */
+.animate-scale-up {
+  animation: scaleUp 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Slide in from left for contact cards */
+.animate-slide-in-left {
+  animation: slideInLeft 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+/* Keyframe animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Staggered animation for skills/tech tags */
+.animate-tech-tag {
+  animation: popIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.animate-tech-tag:nth-child(1) { animation-delay: 0.1s; }
+.animate-tech-tag:nth-child(2) { animation-delay: 0.15s; }
+.animate-tech-tag:nth-child(3) { animation-delay: 0.2s; }
+.animate-tech-tag:nth-child(4) { animation-delay: 0.25s; }
+.animate-tech-tag:nth-child(5) { animation-delay: 0.3s; }
+.animate-tech-tag:nth-child(6) { animation-delay: 0.35s; }
+.animate-tech-tag:nth-child(7) { animation-delay: 0.4s; }
+.animate-tech-tag:nth-child(8) { animation-delay: 0.45s; }
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Contact card hover animations */
+.contact-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
