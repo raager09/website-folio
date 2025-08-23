@@ -1,6 +1,7 @@
-// pages/index.tsx
+// pages/Index.tsx
 import DiscordPresence from '@/components/DiscordPresence';
 import { SocialLinks } from '@/components/SocialLinks';
+import GradientBackground from '@/components/GradientBackground';
 
 const Index = () => {
   return (
@@ -9,15 +10,13 @@ const Index = () => {
       <meta name="description" content="My digital portfolio and online presence" />
       <link rel="icon" href="/favicon.ico" />
       
-      <div className="min-h-screen flex flex-col items-center justify-center p-8">
-        {/* Main content centered vertically and horizontally */}
+      <GradientBackground />
+      
+      <div className="min-h-screen flex flex-col items-center justify-center p-8 relative z-10">
         <div className="content-overlay w-full max-w-md">
-          {/* Discord Presence - Centerpiece */}
           <div className="mb-8">
             <DiscordPresence />
           </div>
-          
-          {/* Social Links - Using your existing component */}
           <SocialLinks />
         </div>
       </div>
