@@ -29,7 +29,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
-                <p className="text-gray-800">hello@example.com</p>
+                <p className="text-gray-800">noemailyet</p>
               </div>
             </div>
             
@@ -41,7 +41,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Discord</h3>
-                <p className="text-gray-800">raager#1234</p>
+                <p className="text-gray-800">raager</p>
               </div>
             </div>
             
@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg">GitHub</h3>
-                <p className="text-gray-800">@raager</p>
+                <p className="text-gray-800">@raager09</p>
               </div>
             </div>
             
@@ -65,7 +65,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Twitter</h3>
-                <p className="text-gray-800">@raager</p>
+                <p className="text-gray-800">@raager02</p>
               </div>
             </div>
           </div>
