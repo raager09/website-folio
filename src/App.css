@@ -98,3 +98,9 @@
     background-position: 0% 50%;
   }
 }
+
+:root {
+  --gradient-color-1: #0f0c29;
+  --gradient-color-2: #302b63;
+  --gradient-color-3: #24243e;
+}
