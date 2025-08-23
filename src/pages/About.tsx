@@ -35,9 +35,9 @@ const About = () => {
             </div>
 
             <div className="space-y-4 text-lg">
-              <p><span className="font-semibold">Name:</span> Raager</p>
+              <p><span className="font-semibold">Name:</span> Aarmaan</p>
               <p><span className="font-semibold">Location:</span> Alberta, Canada</p>
-              <p><span className="font-semibold">Interests:</span> Tech, Coding, AI/ML</p>
+              <p><span className="font-semibold">Interests:</span> Tech, Coding, AI/ML, Photography</p>
             </div>
           </motion.div>
 

@@ -95,7 +95,7 @@ const DiscordPresence = () => {
   if (loading) {
     return (
       <div className="flex items-center justify-center p-6 bg-white/10 backdrop-blur-[2px] rounded-xl border border-white/20 shadow-lg">
-        <p className="text-black">Connecting to Discord...</p>
+        <p className="!text-white" style={{color: 'white !important'}}>Connecting to Discord...</p>
       </div>
     );
   }
@@ -103,7 +103,7 @@ const DiscordPresence = () => {
   if (!discordData) {
     return (
       <div className="flex items-center justify-center p-6 bg-white/10 backdrop-blur-[2px] rounded-xl border border-white/20 shadow-lg">
-        <p className="text-black text-sm">Discord presence not available</p>
+        <p className="!text-white text-sm" style={{color: 'white !important'}}>Discord presence not available</p>
       </div>
     );
   }
@@ -115,7 +115,7 @@ const DiscordPresence = () => {
 
   return (
     <div className="w-full animate-scale-up">
-      {/* Transparent with minimal blur and black text */}
+      {/* Transparent with minimal blur and white text */}
       <div className="bg-white/10 backdrop-blur-[2px] rounded-2xl border border-white/20 shadow-xl overflow-hidden">
         <div className="p-6">
           {/* Avatar and info - More prominent */}
@@ -129,7 +129,7 @@ const DiscordPresence = () => {
                 />
               ) : (
                 <div className="w-16 h-16 bg-black/20 rounded-full flex items-center justify-center border-2 border-white/30">
-                  <span className="text-2xl font-bold text-black">
+                  <span className="text-2xl font-bold !text-white" style={{color: 'white !important'}}>
                     {discord_user?.username?.charAt(0)?.toUpperCase()}
                   </span>
                 </div>
@@ -138,44 +138,44 @@ const DiscordPresence = () => {
             </div>
             
             <div className="flex-1 min-w-0">
-              <h1 className="text-black font-bold text-xl truncate">
+              <h1 className="!text-white font-bold text-xl truncate" style={{color: 'white !important'}}>
                 {discord_user?.global_name || discord_user?.username}
               </h1>
-              <p className="text-black/80 flex items-center gap-1">
+              <p className="!text-white flex items-center gap-1" style={{color: 'white !important'}}>
                 <span className="text-green-500">●</span>
                 Online
               </p>
             </div>
           </div>
 
-          {/* Activities - Clear presentation with black text */}
+          {/* Activities - Clear presentation with white text */}
           <div className="space-y-3">
             {customStatus && (
               <div className="bg-white/10 p-3 rounded-lg backdrop-blur-[1px] border border-white/10">
-                <p className="text-black font-medium truncate">{customStatus.name}</p>
+                <p className="!text-white font-medium truncate" style={{color: 'white !important'}}>{customStatus.name}</p>
                 {customStatus.details && (
-                  <p className="text-black/90 text-sm mt-1">{customStatus.details}</p>
+                  <p className="!text-white text-sm mt-1" style={{color: 'white !important'}}>{customStatus.details}</p>
                 )}
                 {customStatus.state && (
-                  <p className="text-black/70 text-sm mt-1">{customStatus.state}</p>
+                  <p className="!text-white text-sm mt-1" style={{color: 'white !important'}}>{customStatus.state}</p>
                 )}
               </div>
             )}
 
             {otherActivities.map((activity, index) => (
               <div key={index} className="bg-white/10 p-3 rounded-lg backdrop-blur-[1px] border border-white/10">
-                <p className="text-black font-medium truncate">{activity.name}</p>
+                <p className="!text-white font-medium truncate" style={{color: 'white !important'}}>{activity.name}</p>
                 {activity.details && (
-                  <p className="text-black/90 text-sm mt-1">{activity.details}</p>
+                  <p className="!text-white text-sm mt-1" style={{color: 'white !important'}}>{activity.details}</p>
                 )}
                 {activity.state && (
-                  <p className="text-black/70 text-sm mt-1">{activity.state}</p>
+                  <p className="!text-white text-sm mt-1" style={{color: 'white !important'}}>{activity.state}</p>
                 )}
               </div>
             ))}
 
             {!customStatus && otherActivities.length === 0 && (
-              <p className="text-black/60 text-center py-4">No current activity</p>
+              <p className="!text-white text-center py-4" style={{color: 'white !important'}}>No current activity</p>
             )}
           </div>
         </div>

@@ -10,11 +10,11 @@ const Index = () => {
       <title>raager - Digital Portfolio</title>
       <meta name="description" content="My digital portfolio and online presence" />
       <link rel="icon" href="/favicon.ico" />
-      
+     
       <GradientBackground />
-      
-      <div className="min-h-screen flex flex-col items-center justify-center p-8 relative z-10">
-        <div className="content-overlay w-full max-w-md">
+     
+      <div className="min-h-screen flex flex-col items-center justify-center p-8 relative z-10 text-white">
+        <div className="w-full max-w-md relative z-10" style={{color: 'white !important'}}>
           <div className="mb-8">
             <DiscordPresence />
           </div>
