@@ -2,6 +2,7 @@
 import DiscordPresence from '@/components/DiscordPresence';
 import { SocialLinks } from '@/components/SocialLinks';
 import GradientBackground from '@/components/GradientBackground';
+import './styles/background.css' // Added this line
 
 const Index = () => {
   return (
