@@ -1,5 +1,3 @@
-import { BackgroundManager } from '@/components/BackgroundManager';
-import { Navigation } from '@/components/Navigation';
 import { motion } from 'framer-motion';
 
 const fadeUp = {
@@ -9,7 +7,7 @@ const fadeUp = {
 
 const About = () => {
   return (
-    <div className="min-h-screen p-8 text-black">
+    <div className="min-h-screen p-8 text-white">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Top grid: Portfolio + Skills */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -19,13 +17,13 @@ const About = () => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="rounded-xl border p-6 shadow-sm transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:border-blue-400"
+            className="rounded-2xl border border-white/20 p-6 shadow-lg bg-white/10 backdrop-blur-md transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl hover:border-blue-400 hover:bg-white/20"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-gray-100 p-2 rounded-lg transition-colors duration-300 hover:bg-blue-100">
+              <div className="bg-white/20 p-2 rounded-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-black"
+                  className="h-6 w-6 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -49,13 +47,13 @@ const About = () => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="rounded-xl border p-6 shadow-sm transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:border-blue-400"
+            className="rounded-2xl border border-white/20 p-6 shadow-lg bg-white/10 backdrop-blur-md transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl hover:border-blue-400 hover:bg-white/20"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-gray-100 p-2 rounded-lg transition-colors duration-300 hover:bg-blue-100">
+              <div className="bg-white/20 p-2 rounded-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-black"
+                  className="h-6 w-6 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -85,9 +83,9 @@ const About = () => {
                     <span>{skill.name}</span>
                     <span className="font-medium">{skill.level}%</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div className="w-full bg-white/20 rounded-full h-3">
                     <div
-                      className="bg-blue-500 h-3 rounded-full transition-all duration-500 hover:bg-blue-600"
+                      className="bg-blue-500 h-3 rounded-full transition-all duration-500 hover:bg-blue-400"
                       style={{ width: `${skill.level}%` }}
                     />
                   </div>
@@ -103,13 +101,13 @@ const About = () => {
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="rounded-xl border p-6 shadow-sm transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:border-blue-400"
+          className="rounded-2xl border border-white/20 p-6 shadow-lg bg-white/10 backdrop-blur-md transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl hover:border-blue-400 hover:bg-white/20"
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-gray-100 p-2 rounded-lg transition-colors duration-300 hover:bg-blue-100">
+            <div className="bg-white/20 p-2 rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-black"
+                className="h-6 w-6 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -144,11 +142,11 @@ const About = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
-                className="p-4 rounded-lg transition-all duration-300 hover:bg-gray-100 hover:shadow-md"
+                className="p-4 rounded-lg transition-all duration-300 hover:bg-white/20 hover:shadow-md"
               >
                 <h3 className="font-semibold">{job.title}</h3>
-                <p className="text-sm text-gray-600">{job.place}</p>
-                <p className="mt-2 text-gray-800">{job.desc}</p>
+                <p className="text-sm text-gray-200">{job.place}</p>
+                <p className="mt-2 text-gray-100">{job.desc}</p>
               </motion.div>
             ))}
           </div>
