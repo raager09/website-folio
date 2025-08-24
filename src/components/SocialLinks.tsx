@@ -21,12 +21,12 @@ export const SocialLinks = () => {
     {
       icon: <Github className="w-5 h-5" />,
       label: 'GitHub',
-      url: '#'
+      url: 'https://github.com/raager09'
     },
     {
       icon: <Twitter className="w-5 h-5" />,
       label: 'Twitter',
-      url: '#'
+      url: 'https://x.com/Raager2'
     },
     {
       icon: <Instagram className="w-5 h-5" />,

@@ -110,12 +110,12 @@ const Contact = () => {
             <div 
               className="animate-slide-in-left bg-white/12 backdrop-blur-md border border-white/15 rounded-xl p-6 flex items-center gap-4 transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 cursor-pointer transform-gpu group"
               style={{animationDelay: '0.4s'}}
-              onClick={() => handleContactClick('twitter', '@raager02')}
+              onClick={() => handleContactClick('twitter', '@raager2')}
             >
               <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300">🐦</div>
               <div>
                 <h3 className="font-semibold text-lg !text-white group-hover:text-blue-200 transition-colors duration-300" style={{color: 'white !important'}}>Twitter</h3>
-                <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>@raager02</p>
+                <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>@raager2</p>
               </div>
             </div>
           </div>
