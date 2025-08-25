@@ -71,12 +71,12 @@ const Contact = () => {
             <div 
               className="animate-slide-in-left bg-white/12 backdrop-blur-md border border-white/15 rounded-xl p-6 flex items-center gap-4 transition-all duration-300 hover:bg-blue-500/20 hover:border-blue-400/30 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 cursor-pointer transform-gpu group"
               style={{animationDelay: '0.1s'}}
-              onClick={() => handleContactClick('email', 'noemailyet')}
+              onClick={() => handleContactClick('email', 'raagerforsale@gmail.com')}
             >
               <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300">✉️</div>
               <div>
                 <h3 className="font-semibold text-lg !text-white group-hover:text-blue-200 transition-colors duration-300" style={{color: 'white !important'}}>Email</h3>
-                <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>noemailyet</p>
+                <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>raagerforsale@gmail.com</p>
               </div>
             </div>
            

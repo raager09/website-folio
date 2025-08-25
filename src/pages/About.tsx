@@ -122,12 +122,12 @@ const About = () => {
             {[
               {
                 title: 'Frontend Developer',
-                place: 'Freelance · 2022 – Present',
-                desc: 'Building modern web applications with React, TypeScript, and Tailwind.',
+                place: 'Freelance · 2024 – Present',
+                desc: 'Building modern web applications with React, TypeScript, Tailwind, and countless other things.',
               },
               {
                 title: 'Backend Developer',
-                place: 'Personal Projects · 2021 – 2022',
+                place: 'Self-learning · Ongoing',
                 desc: 'Experience with Node.js, Express, and API development.',
               },
               {
