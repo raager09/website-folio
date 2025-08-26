@@ -38,7 +38,7 @@ const About = () => {
               <p><span className="font-semibold">Name:</span> Aarmaan</p>
               <p><span className="font-semibold">Location:</span> Washington, USA</p>
               <p><span className="font-semibold">Interests:</span> Tech, Coding, AI/ML, Photography</p>
-              <p><span className="font-semibold">About Me:</span> A 19 year old interested in learning various skills.</p>
+              <p><span className="font-semibold">About Me:</span> A 19 year old interested in learning full stack web development as well as cyber security. </p>
             </div>
           </motion.div>
 
