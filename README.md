@@ -8,3 +8,4 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 - lovable
+- framer motion
