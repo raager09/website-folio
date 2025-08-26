@@ -36,8 +36,9 @@ const About = () => {
 
             <div className="space-y-4 text-lg">
               <p><span className="font-semibold">Name:</span> Aarmaan</p>
-              <p><span className="font-semibold">Location:</span> Alberta, Canada</p>
+              <p><span className="font-semibold">Location:</span> Washington, USA</p>
               <p><span className="font-semibold">Interests:</span> Tech, Coding, AI/ML, Photography</p>
+              <p><span className="font-semibold">About Me:</span> A 19 year old interested in learning various skills.</p>
             </div>
           </motion.div>
 
@@ -123,13 +124,13 @@ const About = () => {
             {[
               {
                 title: 'Frontend Developer',
-                place: 'Freelance · 2024 – Present',
+                place: 'Freelance · 2025 – Present',
                 desc: 'Building modern web applications with React, TypeScript, Tailwind, and countless other things.',
               },
               {
                 title: 'Backend Developer',
                 place: 'Self-learning · Ongoing',
-                desc: 'Experience with Node.js, Express, and API development.',
+                desc: 'Learning Node.js, Express, and API development.',
               },
               {
                 title: 'AI/ML Enthusiast',
