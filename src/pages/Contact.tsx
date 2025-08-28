@@ -76,7 +76,7 @@ const Contact = () => {
               <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300">✉️</div>
               <div>
                 <h3 className="font-semibold text-lg !text-white group-hover:text-blue-200 transition-colors duration-300" style={{color: 'white !important'}}>Email</h3>
-                <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>raagerforsale@gmail.com</p>
+                <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>raager@fatal.rest</p>
               </div>
             </div>
            
