@@ -71,7 +71,7 @@ const Contact = () => {
             <div 
               className="animate-slide-in-left bg-white/12 backdrop-blur-md border border-white/15 rounded-xl p-6 flex items-center gap-4 transition-all duration-300 hover:bg-blue-500/20 hover:border-blue-400/30 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 cursor-pointer transform-gpu group"
               style={{animationDelay: '0.1s'}}
-              onClick={() => handleContactClick('email', 'raagerforsale@gmail.com')}
+              onClick={() => handleContactClick('email', 'raager@fatal.rest')}
             >
               <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300">✉️</div>
               <div>
