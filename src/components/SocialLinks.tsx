@@ -6,7 +6,8 @@ import {
   Youtube, 
   Globe,
   Mail,
-  MessageCircle
+  MessageCircle,
+  Send
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -45,8 +46,8 @@ export const SocialLinks = () => {
     },
     {
       icon: <MessageCircle className="w-5 h-5" />,
-      label: 'Discord',
-      url: '#'
+      label: 'Send',
+      url: 'https://t.me/raager09'
     }
   ];
 
