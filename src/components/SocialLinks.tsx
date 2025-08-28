@@ -45,7 +45,7 @@ export const SocialLinks = () => {
       url: '#'
     },
     {
-      icon: <MessageCircle className="w-5 h-5" />,
+      icon: <Send className="w-5 h-5" />,
       label: 'Send',
       url: 'https://t.me/raager09'
     }

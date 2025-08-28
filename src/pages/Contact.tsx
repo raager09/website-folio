@@ -73,7 +73,7 @@ const Contact = () => {
               style={{animationDelay: '0.1s'}}
               onClick={() => handleContactClick('email', 'raager@fatal.rest')}
             >
-              <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300">✉️</div>
+              <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300"> <Mail></Mail></div>
               <div>
                 <h3 className="font-semibold text-lg !text-white group-hover:text-blue-200 transition-colors duration-300" style={{color: 'white !important'}}>Email</h3>
                 <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>raager@fatal.rest</p>
@@ -86,7 +86,7 @@ const Contact = () => {
               style={{animationDelay: '0.2s'}}
               onClick={() => handleContactClick('discord', 'raager')}
             >
-              <div className="text-purple-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300">💬</div>
+              <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300"><MessageCircle></MessageCircle></div>
               <div>
                 <h3 className="font-semibold text-lg !text-white group-hover:text-blue-200 transition-colors duration-300" style={{color: 'white !important'}}>Discord</h3>
                 <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>raager</p>
@@ -99,7 +99,7 @@ const Contact = () => {
               style={{animationDelay: '0.3s'}}
               onClick={() => handleContactClick('github', '@raager09')}
             >
-              <div className="text-gray-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300">🐙</div>
+              <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300"><Github></Github></div>
               <div>
                 <h3 className="font-semibold text-lg !text-white group-hover:text-blue-200 transition-colors duration-300" style={{color: 'white !important'}}>GitHub</h3>
                 <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>@raager09</p>
@@ -108,11 +108,11 @@ const Contact = () => {
            
             {/* Twitter - Clickable */}
             <div 
-              className="animate-slide-in-left bg-white/12 backdrop-blur-md border border-white/15 rounded-xl p-6 flex items-center gap-4 transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-2xl hover:-translate-y-2 cursor-pointer transform-gpu group"
+              className="animate-slide-in-left bg-white/12 backdrop-blur-md border border-white/15 rounded-xl p-6 flex items-center gap-4 transition-all duration-300 hover:bg-blue-500/20 hover:border-blue-400/30 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 cursor-pointer transform-gpu group"
               style={{animationDelay: '0.4s'}}
               onClick={() => handleContactClick('twitter', '@raager2')}
             >
-              <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300">🐦</div>
+              <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300"><Twitter></Twitter></div>
               <div>
                 <h3 className="font-semibold text-lg !text-white group-hover:text-blue-200 transition-colors duration-300" style={{color: 'white !important'}}>Twitter</h3>
                 <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>@raager2</p>
