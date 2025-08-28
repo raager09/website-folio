@@ -1,7 +1,7 @@
 import { Home, User, Mail } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import '../Navigation.css'; // We'll create this file
+import '../Navigation.css';
 
 interface NavItem {
   icon: React.ReactNode;
