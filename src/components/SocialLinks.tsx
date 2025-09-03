@@ -37,7 +37,7 @@ export const SocialLinks = () => {
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: 'LinkedIn',
-      url: '#'
+      url: 'www.linkedin.com/in/aarmaan-sekhon-36a285340'
     },
     {
       icon: <Youtube className="w-5 h-5" />,
