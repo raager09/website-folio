@@ -95,8 +95,12 @@ const About = () => {
                 desc: 'Experiments with TensorFlow and PyTorch for computer vision and NLP.',
               },
               {
-                title: 'Freelance Web Apps',
-                desc: 'Full-stack projects built using React, TypeScript, and Node.js.',
+                title: 'Freelance Web Developer',
+                desc: 'Building responsive websites for small businesses and individuals.',
+              },
+              {
+                title: 'Retouch',
+                desc: 'An upcoming AI-powered photo editor tailored for real estate photography.',
               },
             ].map((project, i) => (
               <motion.div
