@@ -100,7 +100,7 @@ const About = () => {
               },
               {
                 title: 'Firebombed',
-                desc: 'Firebombed is a upcoming modern biolink platform for car enthusiasts trying to showcase their builds and social media profiles.',
+                desc: 'Firebombed is a upcoming modern biolink platform for car enthusiasts trying to showcase their builds, car collection and social.',
               },
             ].map((project, i) => (
               <motion.div
