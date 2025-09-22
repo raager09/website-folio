@@ -102,6 +102,10 @@ const About = () => {
                 title: 'Retouch',
                 desc: 'An upcoming AI-powered photo editor tailored for real estate photography.',
               },
+              {
+                title: 'Firebombed',
+                desc: 'Firebombed is a upcoming modern biolink platform tailored for car enthusiasts trying to showcase their builds and social media profiles.',
+              },
             ].map((project, i) => (
               <motion.div
                 key={i}
