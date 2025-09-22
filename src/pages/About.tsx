@@ -95,10 +95,6 @@ const About = () => {
                 desc: 'Experiments with TensorFlow and PyTorch for computer vision and NLP.',
               },
               {
-                title: 'Freelance Web Developer',
-                desc: 'Building responsive websites for small businesses and individuals.',
-              },
-              {
                 title: 'Retouch',
                 desc: 'An upcoming AI-powered photo editor tailored for real estate photography.',
               },
