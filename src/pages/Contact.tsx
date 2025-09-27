@@ -3,6 +3,13 @@ import { Navigation } from '@/components/Navigation';
 import { Mail, MessageCircle, Github, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+library.add(fas, far, fab);
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,10 +27,8 @@ const Contact = () => {
   };
 
   const handleSubmit = () => {
-    // Handle form submission here
+    //form submission for future use if needed ig
     console.log('Form submitted:', formData);
-    // You can add your form submission logic here
-    // For example: send to an API, display success message, reset form, etc.
     
     // Reset form after submission (optional)
     setFormData({
@@ -86,7 +91,7 @@ const Contact = () => {
               style={{animationDelay: '0.2s'}}
               onClick={() => handleContactClick('discord', 'raager')}
             >
-              <div className="text-blue-400 text-2xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300"><MessageCircle></MessageCircle></div>
+              <div className="text-blue-400 text-2xl translate-x-[1px] group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300"><FontAwesomeIcon icon={['fab', 'discord']} /></div>
               <div>
                 <h3 className="font-semibold text-lg !text-white group-hover:text-blue-200 transition-colors duration-300" style={{color: 'white !important'}}>Discord</h3>
                 <p className="!text-white group-hover:text-blue-300 transition-colors duration-300" style={{color: 'white !important'}}>raager</p>

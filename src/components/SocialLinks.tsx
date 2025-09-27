@@ -10,6 +10,8 @@ import {
   Send
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 interface SocialLink {
   icon: React.ReactNode;
@@ -32,20 +34,20 @@ export const SocialLinks = () => {
     {
       icon: <Instagram className="w-5 h-5" />,
       label: 'Instagram', 
-      url: '#'
+      url: 'https://www.instagram.com/aarmaan_sekhon?igsh=MXE1NzBjcmM2bW4xaQ%3D%3D&utm_source=qr'
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: 'LinkedIn',
-      url: 'www.linkedin.com/in/aarmaan-sekhon-36a285340'
+      url: 'https://www.linkedin.com/in/aarmaan-sekhon-36a285340'
     },
     {
-      icon: <Youtube className="w-5 h-5" />,
-      label: 'YouTube',
-      url: '#'
+      icon: <Globe className="w-5 h-5" />,
+      label: 'other website',
+      url: 'https://guns.lol/rgr'
     },
     {
-      icon: <Send className="w-5 h-5" />,
+      icon: <FontAwesomeIcon icon={faTelegram} className="w-5 h-5" />,
       label: 'Send',
       url: 'https://t.me/raager09'
     }
